@@ -167,12 +167,19 @@
     footer .link{font-weight:900;margin-bottom:8px;}
     footer small{display:block;opacity:.9;margin-top:6px;}
 
+    /* ✅ 모바일: 제목(sys-title)까지 확실히 가운데 정렬 */
     @media (max-width:480px){
       .top-inner{justify-content:center;text-align:center}
       h1{font-size:22px}
       .btn{min-width:140px}
       .brand-logo{ height:28px; }  /* 모바일에서 배너 조금 작게 */
-      .sys-title{ font-size:16px; }/* 모바일에서 타이틀도 살짝 줄임 */
+      .sys-title{
+        font-size:16px;            /* 모바일에서 타이틀도 살짝 줄임 */
+        width:100%;
+        justify-content:center;
+        text-align:center;
+        line-height:1.25;          /* 줄간격(선택) */
+      }
     }
   </style>
 </head>
@@ -266,5 +273,3 @@
   </footer>
 </body>
 </html>
-
-
